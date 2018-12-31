@@ -1,7 +1,7 @@
 # SchoolRank
 ![](images/wordcloud.jpg)
 
-[**博客查看本文: https://vonsdite.cn/92d0ece7.html**](https://vonsdite.cn/92d0ece7.html)
+[**博客查看本文: https://vonsdite.cn/posts/92d0ece7.html**](https://vonsdite.cn/posts/92d0ece7.html)
 
 ## 数据来源
 1. 中国学位与研究生教育信息网 => http://www.cdgdc.edu.cn/xwyyjsjyxx/xkpgjg/

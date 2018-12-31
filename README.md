@@ -1,4 +1,7 @@
 # SchoolRank
+![](images/wordcloud.jpg)
+
+博客查看本文: [](https://vonsdite.cn/92d0ece7.html)
 
 ## 数据来源
 1. 中国学位与研究生教育信息网 => http://www.cdgdc.edu.cn/xwyyjsjyxx/xkpgjg/
@@ -11,6 +14,16 @@
 2. 可以方便大家知道某个高校的强势在哪里
 
 ## 脚本介绍
+
+### 需要的第三方库
+> - **wordcloud**: `pip install wordcloud`
+> - **pandas**: `pip install pandas`
+> - **numpy**: `pip install numpy`
+> - **matplotlib**: `pip install matplotlib`
+> - **pillow**: `pip install pillow`
+> - **requests**: `pip install requests`
+> - **BeautifulSoup**: `pip install beautifulsoup4`
+
 ### `show.py`
 _展示学校的评估结果_
 
@@ -26,20 +39,12 @@ _展示学校的评估结果_
 `show.py 西安交通大学 中山大学`
 ![](README_IMAGES/2018-12-31-11-22-42.png)
 
-#### 第三方库
-**pandas**: `pip install pandas`
-**numpy**: `pip install numpy`
-**matplotlib**: `pip install matplotlib`
 
 ### `GetSomeData/GetSchoolRank.py`
 _用于获取高校评估的脚本_
 
 使用爬虫来获取 **全国第四轮学科评估结果**, 将数据保存为了 `schoolRank.xlsx`, 保存为`.xlsx`文件是为了方便使用`excel`进行操作(也可以自己保存为`.csv`文件来进行数据处理, 代码中已注释)
 
-#### 第三方库
-**requests**: `pip install requests`
-**pandas**: `pip install pandas`
-**BeautifulSoup**: `pip install beautifulsoup4`
 
 #### schoolRank.xlsx数据展示
 ![](README_IMAGES/2018-12-31-00-05-18.png)
@@ -54,8 +59,6 @@ _用于统计每个学校得到各个评估的次数_
 
 通过`pandas`简易处理下数据, 将数据保存为了 `schoolRank.xlsx`, 保存为`.xlsx`文件是为了方便使用`excel`进行操作(也可以自己保存为`.csv`文件来进行数据处理, 代码中已注释)
 
-#### 第三方库
-**pandas**: `pip install pandas`
 
 #### schoolAssementCount.xlsx数据展示
 ![](README_IMAGES/2018-12-31-10-52-25.png)
@@ -65,12 +68,8 @@ _用于统计每个学校得到各个评估的次数_
 ### `GetSomeData/GetWordCloud.py`
 _以`schoolRank.xlsx`中的学校名来作词云, 实际就是按学校参加评估的总次数来画词云_
 
-#### 第三方库 
-**wordcloud**: `pip install wordcloud`
-**pandas**: `pip install pandas`
-**numpy**: `pip install numpy`
-**matplotlib**: `pip install matplotlib`
-**pillow**: `pip install pillow`
+该项目生成的词云如下:
+![](images/wordcloud.jpg)
 
 ##### 注意
 **注意1**
